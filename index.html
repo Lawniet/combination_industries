@@ -303,7 +303,7 @@
                                 <input class="w3-input w3-border" name="message" type="text" placeholder="Message" />
                             </div>
                         </div>
-
+<br><br>
                         <button class="w3-button w3-block w3-section w3-text-white w3-orange w3-ripple w3-padding">Send order</button>
                     </form>
                 </div>
@@ -311,7 +311,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="w3-container w3-light-grey w3-xlarge" style="padding: 128px 16px;" id="contact">
+        <div class="w3-center w3-container w3-light-grey w3-xlarge" style="padding: 128px 16px;" id="contact">
             <h1 class="w3-center w3-jumbo">CONTACT US</h1>
             <!--hr class="dashed"-->
             <div class="w3-row-padding w3-center" style="margin-top: 64px;">
@@ -338,7 +338,58 @@
                     <a href="mailto:jobs@combinationindustries.com">jobs@combinationindustries.com</a>
                 </div>
             </div>
+          <button class="w3-button w3-orange w3-text-white w3-padding-large w3-hover-text-orange" onclick="document.getElementById('id02').style.display='block'">SEND MESSAGE</button>
         </div>
+
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright w3-jumbo">&times;</span>
+        <h2 class="w3-center">Get In Touch</h2>
+        <form action="/action_page.php" class="w3-container  w3-text-orange w3-margin w3-large">
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-location-arrow"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="subject" type="text" placeholder="Subject">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    <div class="w3-rest">
+      <textarea  class="w3-input w3-border" name="message"  placeholder="Type your message"></textarea>
+    </div>
+</div>
+
+<button class="w3-button w3-block w3-section w3-text-white w3-orange w3-ripple w3-padding">Send</button>
+
+</form>
+
+      </div>
+    </div>
+  </div>
+    
         <!-- Disclaimer Section -->
         <div class="w3-container w3-xlarge" style="padding: 128px 16px;">
             <h1 class="w3-center w3-jumbo">DISCLAIMER</h1>
