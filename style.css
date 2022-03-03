@@ -1,0 +1,45 @@
+body,
+html {
+    height: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif;
+}
+.menu {
+    display: none;
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, black 0%, transparent 70%), url("/images/Model_product.jpg");
+    background-blend-mode: darken;
+    min-height: 100%;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+/* Dashed border */
+hr.dashed {
+    width: 30%;
+    text-align: center;
+    border-top: 3px dashed orange;
+}
+.mySlides {
+    display: none;
+}
