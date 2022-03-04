@@ -43,3 +43,9 @@ hr.dashed {
 .mySlides {
     display: none;
 }
+.mySlides > img {
+    height: 400px!important;
+}
+#machinetype {
+  height: 120px!important;
+}
