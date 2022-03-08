@@ -3,10 +3,10 @@ html {
   width: 100%;
   height: 100%;
   line-height: 1.8;
-  font-size: 100%;
+  font-size: 100%!important;
 }
 @media only screen and (max-device-width: 480px) {
-	html { font-size: 110%; // 18px }
+	html { font-size: 120%!important; }
 }
 body,
 h1,
@@ -44,6 +44,7 @@ hr.dashed {
 }
 .mySlides {
     display: none;
+    font-size: 1.7em!important;
 }
 .mySlides > img {
     min-height: 400px!important;
