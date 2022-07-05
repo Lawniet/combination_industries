@@ -3,8 +3,8 @@
   <head>
     <title>Combination Industries | Home to the original tasty cheeseballs</title>
   
-    <link rel="icon" href="/images/favicon.png" sizes="any"><!-- 32×32 -->
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="/images/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.ico"><!-- 128×128 -->
     <link rel="manifest" href="/images/manifest.webmanifest">
   
     <meta charset="UTF-8" />
@@ -15,9 +15,8 @@
     <meta http-equiv="Cache-Control" content="max-age=86400000" />
   
     <link rel="canonical" href="https://combinationindustries.lauanyreis.repl.co" />
-    <!--script src="https://kit.fontawesome.com/ac93303517.js" crossorigin="anonymous"></script-->
     <link rel="stylesheet" type="text/css" href="assets/style.min.css" media="screen" id="common-css" disabled/>
-    <link rel="stylesheet" type="text/css" href="assets/theme-orange.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/theme-orange.min.css" media="screen"/>
     <script type="text/javascript">
       // now CSS stylesheet with id "#common-css" will be loaded and styles applied
             window.onload = function()
@@ -26,22 +25,17 @@
             }
         </script>
     </head>
-    <body>
-        <script script-src-elem type="text/javascript" src="assets/script.js"></script>
+    <body class="w3-mobile">
+        <script script-src-elem type="text/javascript" src="assets/script.min.js"></script>
+       <script script-src-elem type="text/javascript" src="assets/social_iconify.min.js"></script>
+ <script script-src-elem type="text/javascript" src="assets/typewrite.min.js"></script>
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
 			<nav>
 				<div class=" w3-theme-white w3-top w3-bar  w3-padding w3-card" id="myNavbar">
-					<!--a href="http://combinationindustries.com" class="w3-right w3-bar-item w3-button" title="To original site">
-						<img 
-							class="w3-image" src="/images/Transparent_logo.png" 
-							alt="Combination Industries" id="logo" data-height-percentage="100" 
-							srcset="/images/Transparent_logo.png 480w, /images/Transparent_logo.png 1080w" 
-							sizes="50vw" width="88px" height="40px"/>
-          </a-->
 					<!-- Right-sided navbar links -->
 					<div class="w3-hide-small w3-padding w3-bar">
-						<a href="#" class="w3-bar-item w3-button w3-hover-text-theme-orange" title="To Home">HOME</a>
+						<a href="#" class="w3-bar-item w3-button w3-hover-text-theme-orange" title="To Home"><i class="material-icons w3-xlarger" aria-hidden="true">home</i> HOME</a>
 						<a href="#about" class="w3-bar-item w3-button w3-hover-text-theme-orange" title="To About"><i class="material-icons w3-xlarger" aria-hidden="true">info</i> ABOUT </a>
 						<a href="#social" class="w3-bar-item w3-button w3-hover-text-theme-orange" title="To Social"><i class="material-icons w3-xlarger" aria-hidden="true">photo</i> SOCIAL</a>
 						<a href="#team" class="w3-bar-item w3-button w3-hover-text-theme-orange" title="To Team"><i class="material-icons w3-xlarger" aria-hidden="true">people</i> TEAM </a>
@@ -71,17 +65,19 @@
         <!-- Header with full-height image -->
         <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
             <div class="w3-display-left w3-text-theme-white w3-xlarge" style="padding: 48px;">
-                <br />
-                <br />
+<div class="w3-panel w3-padding-16">
                 <h1 class="w3-jumbo w3-hide-small" style="text-shadow:1px 1px 0 #444"><b>WELCOME TO COMBINATION INDUSTRIES</b></h1><br />
-				<h1 class="w3-xxlarge w3-hide-large w3-hide-medium" style="text-shadow:1px 1px 0 #444"><b>WELCOME TO COMBINATION INDUSTRIES</b></h1><br />
-                <p id="machinetype" height="45px"></p>
-                <p><a href="#products" class="w3-button w3-theme-orange  w3-padding-large w3-large w3-margin-top w3-hover-text-theme-orange w3-round"><b>VIEW PRODUCTS</b></a></p>
+				<h1 class="w3-xxlarge w3-hide-large w3-hide-medium" style="text-shadow:1px 1px 0 #444"><b>WELCOME TO COMBINATION INDUSTRIES</b></h1>
+  </div>
+                <div class="w3-panel w3-padding-16">
+                <p id="machinetype"></p> 
+              </div>
             </div>
-            <div class="w3-display-bottomleft w3-text-theme-orange w3-xlarge" style="padding: 7px 48px;">
-                <a href="https://www.facebook.com/niksnacksCheeseballs/" aria-label="Facebook"><i class="material-icons w3-hover-opacity w3-xxlarger" aria-hidden="true" title="Facebook">facebook</i></a>
-                <a href="https://www.instagram.com/niksnacks599/" aria-label="Instagram"><i class="material-icons w3-hover-text-white w3-xxlarger" aria-hidden="true" title="Instagram">instagram</i></a>
-                <a href="https://www.twitter.com/niksnacks1/" aria-label="Twitter"><i class="material-icons w3-hover-text-white w3-xxlarger" aria-hidden="true" title="Twitter">twitter</i></a>
+            <div class="w3-display-bottomleft w3-text-theme-orange w3-xlarge" style="padding: 13px 48px;">
+              <p><a href="#products" class="w3-button w3-theme-orange  w3-padding-large w3-large w3-margin-top w3-hover-text-theme-orange w3-round"><b>VIEW PRODUCTS</b></a></p>
+                <a href="https://www.facebook.com/niksnacksCheeseballs/" class="w3-padding w3-hover-theme-indigo" aria-label="Facebook" title="Facebook"><span class="iconify" data-icon="fa:facebook-square" data-width="32" aria-hidden="true" ></span></a>
+               <a href="https://www.instagram.com/niksnacks599/" class="w3-padding w3-hover-theme-purple" aria-label="Instagram" title="Instagram"><span class="iconify" data-icon="fa:instagram" data-width="32" aria-hidden="true"></span></a>
+                <a href="https://www.twitter.com/niksnacks1/" class="w3-padding w3-hover-theme-aqua" aria-label="Twitter" title="Twitter"><span class="iconify" data-icon="fa:twitter-square" data-width="32" aria-hidden="true" ></span></a>
             </div>
         </header>
 		<main>
@@ -100,7 +96,7 @@
 				<div class="w3-row-padding w3-center" style="margin-top: 64px;">
 					<div class="w3-half">
 						<i class="material-icons w3-text-theme-orange w3-margin-bottom w3-jumbo" aria-hidden="true">interests</i>
-						<h2 class="w3-center w3-jumbo">Our vision and values</h2>
+						<h2 class="w3-center w3-jumbo">Vision and values</h2>
 						<p>
 							We, as a team, are highly motivated and dedicated to provide you with the most mouth-watering and delicious snacks in the food industry! Our commitment to YOU, and the industry, give us the strength to provide you
 							with the best quality product.
@@ -118,9 +114,9 @@
 			</div>
 
 			<!-- Team Section -->
-			<div class="w3-center w3-container w3-theme-light-gray w3-xlarge" style="padding: 128px 16px;" id="team">
+			<div class="w3-center w3-cell-row w3-theme-light-gray w3-large" style="padding: 128px 16px;" id="team">
 				<div class="w3-row-padding">
-					<div class="w3-col m6">
+					<div class="w3-container w3-cell w3-cell-middle">
 						<img
 							class="w3-image w3-round-large slidesProducts w3-animate-fading"
 							src="/images/Models_holding_product.jpg"
@@ -142,7 +138,7 @@
 							srcset="/images/Model_holding_products.jpg 480w, /images/Model_holding_products.jpg 1080w" 
 							sizes="50vw" width="1500px" height="1512px"/>
 					</div>
-					<div class="w3-center w3-col m6">
+					<div class="w3-container w3-center w3-cell w3-cell-middle">
 						<h1 class="w3-center w3-jumbo">Our Team of Employees</h1>
 						<p>
 							You Are Welcome! Our team comprises a huge number of talented individual, from varied nations and works of life, working together with utmost diligence and dedication to provide the best quality product at your
@@ -177,18 +173,16 @@
 					Meetings
 				</div>
 			</div>
-
 			<!-- "Promo Section" and "Statistics" -->
-			<div class="w3-container w3-theme-light-gray w3-xlarge" style="padding: 128px 16px;" id="social">
+			<div class="w3-cell-row w3-theme-light-gray w3-large" style="padding: 128px 16px;" id="social">
 				<div class="w3-row-padding">
-					<div class="w3-center w3-col m6">
+					<div class="w3-center w3-cell w3-cell-middle">
 						<h1 class="w3-center w3-jumbo">Our Social Responsibility</h1>
 						<p>
-							We are extremely particular and sincere when it comes to you, industries and our employees! Our work ethics and principles lead us in putting the needs of our customers on the top of our priority list! Quality is
-							never compromised upon! We work together to bring joy to as many people as possible!
+							Our work ethics and principles lead us in putting the needs of our customers on the top of our priority list! Quality is never compromised upon! We work together to bring joy to as many people as possible!
 						</p>
 					</div>
-					<div class="w3-col m6">
+					<div class="w3-cell w3-cell-middle">
 						<div class="w3-center w3-content w3-display-container">
 							<div class="w3-display-container mySlides">
 								<img 
@@ -319,7 +313,7 @@
 								<span>Perfect for the kids in your school and at home</span>
 							</li>
 							<li class="w3-theme-light-gray w3-padding-24">
-								<span class="w3-theme-orange  w3-padding-large">$5<span class="w3-large">.00</span></span>
+								<span class="w3-theme-orange  w3-padding-large w3-block">$0<span class="w3-large">.15</span></span>
 							</li>
 						</ul>
 					</div>
@@ -338,7 +332,7 @@
 								<span>Who said the grown ups were left out? Watch a movie, a football game or just chill with this pack in your hand Starts: Februrary 6th</span>
 							</li>
 							<li class="w3-theme-light-gray w3-padding-24">
-								<span class="w3-theme-orange  w3-padding-large">$9<span class="w3-large">.99</span></span>
+								<span class="w3-theme-orange  w3-padding-large w3-block">$0<span class="w3-large">.95</span></span>
 							</li>
 						</ul>
 					</div>
@@ -355,7 +349,7 @@
 								<h2 class="w3-wide"><b>Niksnacks Jar (145g)</b></h2>
 								<span>For everybody, for every occasion, for every time. Keep a jar around.</span>
 							</li>
-							<li class="w3-theme-light-gray w3-padding-24"><span class="w3-theme-orange  w3-padding-large">$15<span class="w3-large">.50</span></span></li>
+							<li class="w3-theme-light-gray w3-padding-24"><span class="w3-theme-orange  w3-padding-large w3-block">$3<span class="w3-large">.50</span></span></li>
 						</ul>
 					</div>
 				</div>
@@ -370,7 +364,7 @@
 					<div class="w3-container">
 						<span onclick="document.getElementById('id01').style.display='none'" class="material-icons w3-button w3-display-topright w3-larger">close</span>
 						<form action="" class="w3-container w3-text-theme-orange w3-margin w3-large">
-							<h2 class="w3-center">Please Fill The Order Form</h2>
+							<h3 class="w3-center">Please Fill The Order Form</h3>
 
 							<div class="w3-row w3-section">
 								<div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">person_pin</i></div>
@@ -396,14 +390,14 @@
 							<div class="w3-row w3-section">
 								<div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">shopping_basket</i></div>
 								<div class="w3-rest">
-									<select class="w3-select w3-border" name="option">
+									<select id="select_product" class="w3-select w3-border" name="option" onChange="update()">
 										<option value="" disabled selected>Choose your product</option>
-										<option value="1">7gms pouch packed in 50 pkts bag - Anytime pack</option>
-										<option value="2">14gms pouch packed in 50 pkts bag – Made to Order Pack</option>
-										<option value="3">20gms pouch packed in 50 pkts bag – Hands off my Niksnacks</option>
-										<option value="4">35gms pouch packed in 30 pkts bag - Star Pack</option>
-										<option value="5">50gms pouch packed in 30 pkts bag – Party pack</option>
-										<option value="6">145gms Jar packing of 6 jars – Friends and Family Pack</option>
+										<option value="1.50">7gms pouch packed in 50 pkts bag - Anytime pack</option>
+										<option value="2.50">14gms pouch packed in 50 pkts bag – Made to Order Pack</option>
+										<option value="5.00">20gms pouch packed in 50 pkts bag – Hands off my Niksnacks</option>
+										<option value="7.50">35gms pouch packed in 30 pkts bag - Star Pack</option>
+										<option value="28.50">50gms pouch packed in 30 pkts bag – Party pack</option>
+										<option value="21.00">145gms Jar packing of 6 jars – Friends and Family Pack</option>
 									</select>
 								</div>
 							</div>
@@ -411,15 +405,13 @@
 							<div class="w3-row w3-section">
 								<div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">local_shipping</i></div>
 								<div class="w3-rest">
-									<input class="w3-input w3-border" name="address" type="text" placeholder="Address" />
+									<input id="myInput" class="w3-input w3-border" name="address" type="text" placeholder="Country address" />
 								</div>
 							</div>
               <div class="w3-row w3-section">
                 <div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">price_check</i></div>
-                <div class="w3-rest"></div>
+                <div class="w3-rest"><input class="w3-input w3-border w3-disabled" name="value" type="text" placeholder="Price" id="value" /></div>
               </div>
-							<br />
-							<br />
 							<button class="w3-button w3-block w3-section w3-theme-orange w3-ripple w3-padding w3-round w3-hover-text-theme-orange" aria-pressed="false">Send order</button>
 						</form>
 					</div>
@@ -427,15 +419,24 @@
 			</div>
 
 			<!-- Contact Section -->
-			<div class="w3-center w3-container w3-theme-light-gray w3-xlarge" style="padding: 128px 16px;" id="contact">
-				<h1 class="w3-center w3-jumbo">CONTACT US</h1>
-				<!--hr class="dashed"-->
+      <div class="container-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.546907267711!2d8.336458214090596!3d5.014634740253336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d7d6b014553eb%3A0xe1f834cee1bcbf52!2sCombination%20Industries!5e0!3m2!1spt-BR!2sbr!4v1656979448456!5m2!1spt-BR!2sbr"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+			<div class="w3-center w3-container w3-theme-light-gray w3-xlarge w3-padding-48" id="contact">
+				
+        <h1 class="w3-center w3-jumbo">OUR CONTACT</h1>
+<div>
+     <div style="white-space: nowrap; text-align: center; width: 50%; padding: 6px 0;">
+    </div>
+</div>
+				
 				<div class="w3-row-padding w3-center" style="margin-top: 64px;">
 					<div class="w3-third">
 						<i class="material-icons w3-text-theme-orange w3-margin-bottom w3-big" aria-hidden="true">place</i>
 						<h2><b>Address</b></h2>
 						<p>
-							Combination Industries, FZEPlot D18 & 19, CFTZ<br />
+							Combination Industries, <br />
 							Calabar, Cross River state, Nigeria
 						</p>
 					</div>
@@ -450,13 +451,13 @@
 					<div class="w3-third">
 						<i class="material-icons w3-text-theme-orange w3-margin-bottom w3-big" aria-hidden="true">email</i>
 						<h2><b>Email</b></h2>
-						<a href="mailto:info@combinationindustries.com">info@combinationindustries.com</a><br />
-						<a href="mailto:jobs@combinationindustries.com">jobs@combinationindustries.com</a>
+						<a class="w3-hover-text-theme-orange" href="mailto:info@combinationindustries.com" title="info">info@combinationindustries.com</a><br />
+						<a class="w3-hover-text-theme-orange" href="mailto:jobs@combinationindustries.com" title="jobs">jobs@combinationindustries.com</a>
 					</div>
 				</div>
 				<br />
 				<br />
-				<button class="w3-button w3-theme-orange  w3-padding-large w3-hover-text-theme-orange w3-round" onclick="document.getElementById('id02').style.display='block'" aria-pressed="false">Send Message</button>
+        <button class="w3-button w3-theme-orange  w3-padding-large w3-hover-text-theme-orange w3-round w3-round" onclick="document.getElementById('id02').style.display='block'" aria-pressed="false">Contact Us</button>
 			</div>
 			<!-- Modal form -->
 			<div id="id02" class="w3-modal">
@@ -465,7 +466,7 @@
 						<span onclick="document.getElementById('id02').style.display='none'" class="material-icons w3-button w3-display-topright w3-xlarger" aria-hidden="true">
 close</span>
 						<form action="/action_page.php" class="w3-container w3-text-theme-orange w3-margin w3-large">
-						<h2 class="w3-center">Get In Touch</h2>
+						<h3 class="w3-center">Get In Touch</h3>
 							<div class="w3-row w3-section">
 								<div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">person_pin</i></div>
 								<div class="w3-rest">
@@ -483,7 +484,7 @@ close</span>
 							<div class="w3-row w3-section">
 								<div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">alternate_email</i></div>
 								<div class="w3-rest">
-									<input class="w3-input w3-border" name="email" type="text" placeholder="Email" />
+									<input class="w3-input w3-border" name="email" type="email" placeholder="Email" />
 								</div>
 							</div>
 
@@ -497,10 +498,10 @@ close</span>
 							<div class="w3-row w3-section">
 								<div class="w3-col" style="width: 50px;"><i class="w3-xxlarge material-icons" aria-hidden="true">rate_review</i></div>
 								<div class="w3-rest">
-									<textarea class="w3-input w3-border" name="message" placeholder="Type your message"></textarea>
+									<textarea class="w3-input w3-border" name="message" placeholder="Type your message" style="resize: none;"></textarea>
 								</div>
 							</div>
-							<button class="w3-button w3-block w3-section w3-theme-orange w3-ripple w3-padding w3-round w3-hover-text-theme-orange" aria-pressed="false"><i class="w3-xxlarge material-icons" aria-hidden="true">send</i>Send</button>
+							<button class="w3-button w3-block w3-section w3-theme-orange w3-ripple w3-padding w3-round w3-hover-text-theme-orange" aria-pressed="false">Send message</button>
 						</form>
 					</div>
 				</div>
@@ -522,9 +523,9 @@ close</span>
             <a href="#" class="w3-button w3-theme-light-gray w3-hover-text-theme-orange w3-round" title="Back to top" aria-label="Top top"><i class="material-icons w3-margin-right w3-xxlarger" aria-hidden="true">swipe_up_alt</i>To the top</a>
 
             <div class="w3-xlarge w3-section">
-                <a href="https://www.facebook.com/niksnacksCheeseballs/" class="w3-hover-text-theme-orange w3-padding-large" title="Niksnacks facebook" aria-label="Facebook"><i class="material-icons w3-hover-opacity w3-xxlarger" aria-hidden="true">facebook</i></a>
-                <a href="https://www.instagram.com/niksnacks599/" class="w3-hover-text-theme-orange w3-padding-large" title="Niksnacks instagram" aria-label="Instagram"><i class="fa fa-instagram w3-hover-opacity w3-xxlarger" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/niksnacks1/" class="w3-hover-text-theme-orange w3-padding-large" title="Niksnacks twitter" aria-label="Twitter"><i class="fa fa-twitter w3-hover-opacity w3-xxlarger" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/niksnacksCheeseballs/" class="w3-hover-text-theme-orange w3-padding-large w3-hover-theme-indigo" title="Niksnacks facebook" aria-label="Facebook"><span class="iconify" data-icon="line-md:facebook" aria-hidden="true""></span></a>
+                <a href="https://www.instagram.com/niksnacks599/" class="w3-hover-text-theme-orange w3-padding-large w3-hover-theme-purple" title="Niksnacks instagram" aria-label="Instagram"><span class="iconify" data-icon="line-md:instagram" aria-hidden="true"></span></a>
+                <a href="https://www.twitter.com/niksnacks1/" class="w3-hover-text-theme-orange w3-padding-large w3-hover-theme-aqua" title="Niksnacks twitter" aria-label="Twitter"><span class="iconify" data-icon="line-md:twitter" aria-hidden="true"></span></a>
             </div>
             <p>Made by <a href="https://github.com/Lawniet" title="Lawniet" target="_blank" class="w3-hover-text-theme-orange">Lauany Reis da Silva</a></p>
         </footer>
@@ -543,7 +544,130 @@ close</span>
             let text = document.getElementById("machinetype");
             let speed = 190;
             let cont = 0;
-            typeWriter();
+            //typeWriter();
+
+
+          var app = document.getElementById('machinetype');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('A home to your very own taste and great')
+  .pauseFor(300)
+  .deleteChars(15)
+  .typeString('<strong>delicious and irresistible</strong> ')
+  .typeString('<strong><span style="color: orange;">Niksnacks</span>!!!!!</strong> ')
+  .pauseFor(5000)
+  .start();
+          			update();
+
+
+          function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
         </script>
     </body>
 </html>
